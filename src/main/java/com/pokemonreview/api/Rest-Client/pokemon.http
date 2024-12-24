@@ -1,0 +1,28 @@
+### Get all reviews
+GET http://localhost:8080/api/pokemons
+Accept: application/json
+
+### Get a specific review by ID
+GET http://localhost:8080/api/pokemons/1
+Accept: application/json
+
+### Create a new review
+POST http://localhost:8080/api/pokemon
+Content-Type: application/json
+
+{
+    "name": "Abra",
+    "type": "Psychic"
+}
+
+### Update an existing review
+PUT http://localhost:8080/api/pokemons/1
+Content-Type: application/json
+
+{
+    "name": "Absol",
+    "type": "Dark"
+}
+
+### Delete a review
+DELETE http://localhost:8080/api/pokemons/1
