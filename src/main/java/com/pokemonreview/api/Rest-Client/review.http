@@ -3,11 +3,12 @@ GET http://localhost:8080/api/pokemon/1/reviews
 Accept: application/json
 
 ### Get a specific review by ID
-GET http://localhost:8080/api/reviews/1
+GET http://localhost:8080/api/pokemon/2/reviews/2
 Accept: application/json
 
 ### Create a new review
-POST http://localhost:8080/api/reviews
+POST http://localhost:8080/api/pokemon/1/reviews
+Accept: application/json
 Content-Type: application/json
 
 {
@@ -17,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Update an existing review
-PUT http://localhost:8080/api/reviews/1
+PUT http://localhost:8080/api/pokemon/2/reviews/2
 Content-Type: application/json
 
 {
@@ -27,4 +28,4 @@ Content-Type: application/json
 }
 
 ### Delete a review
-DELETE http://localhost:8080/api/reviews/1
+DELETE http://localhost:8080/api/pokemon/1/reviews/7
